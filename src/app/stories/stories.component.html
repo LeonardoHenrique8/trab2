@@ -1,0 +1,19 @@
+<section class="container">
+  <div class="background_sto" fxFlex fxLayout="column">
+    <div fxLayout="row wrap">
+      <div fxFlex="33" fxFlex.md="33" fxFle.sm="50" fxFlex.xs="100" fxLayout="column" *ngFor="let storie of TodosStories | async" style="padding: 5px">
+        <a href="{{storie.urls[0].url}}" target="_blank">
+          <mat-card class="my_sto">
+            <img mat-card-image class="imagem" src={{storie.thumbnail.path}}.{{storie.thumbnail.extension}} alt="{{storie.title}}">
+            <div><h2 id="sto_name"> {{storie.title}}</h2></div>
+            <div>
+              <button id="btn">
+                <a id="detalhes" href="{{storie.urls[0].url}}" target="_blank">Detalhes</a>
+              </button>
+            </div>
+          </mat-card>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

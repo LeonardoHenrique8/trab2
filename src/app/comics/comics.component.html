@@ -1,0 +1,19 @@
+<section class="container">
+  <div class="background_com" fxFlex fxLayout="column">
+    <div fxLayout="row wrap">
+      <div fxFlex="33" fxFlex.md="33" fxFle.sm="50" fxFlex.xs="100" fxLayout="column" *ngFor="let comic of TodasComics | async" style="padding: 5px">
+        <a href="{{comic.urls[0].url}}" target="_blank">
+          <mat-card class="my_com">
+            <img mat-card-image class="imagem" src={{comic.thumbnail.path}}.{{comic.thumbnail.extension}} alt="{{comic.title}}">
+            <div><h2 id="com_name"> {{comic.title}}</h2></div>
+            <div>
+              <button id="btn">
+                <a id="detalhes" href="{{comic.urls[0].url}}" target="_blank">Detalhes</a>
+              </button>
+            </div>
+          </mat-card>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

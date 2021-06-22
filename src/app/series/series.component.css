@@ -1,0 +1,62 @@
+
+.container {
+  background-color:black;
+}
+
+.background_ser {
+  max-width: 960px !important;
+  margin: 40px auto;
+}
+
+img.mat-card-image {
+  max-width: 300px;
+  border-radius: 10px;
+  position: relative;
+  background-color: #fff;
+  border-bottom: 4px solid blue;
+  height: 300px;
+}
+
+img.mat-card-image:hover {
+  top: -5px;
+  right: -5px;
+  box-shadow: 0px 4px 4px #000;
+  transition: all 0.2s ease-in-out;
+}
+
+#ser_name {
+  font-family: sans-serif;
+  text-align: center;
+  color: white;
+}
+
+.my_ser {
+  border: 2px solid blue;
+  background-color: red;
+  height: 500px;
+  border-radius: 10px;
+}
+
+.my_ser:hover {
+  background-color: black;
+  transition: 0.5s;
+}
+
+a {
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.15em;
+  color: #000;
+  font-family: sans-serif;
+}
+
+#btn {
+  display: block;
+  margin: 0 auto;
+  background-color: white;
+  border-color: blue;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+

@@ -1,0 +1,19 @@
+<section class="container">
+    <div class="background_char" fxFlex fxLayout="column">
+        <div fxLayout="row wrap">
+            <div fxFlex="33" fxFlex.md="33" fxFle.sm="50" fxFlex.xs="100" fxLayout="column" *ngFor="let character of TodosPersonagens | async" style="padding: 5px">
+                <a href="{{character.urls[0].url}}" target="_blank">
+                    <mat-card class="my_char">
+                        <img mat-card-image class="imagem" src={{character.thumbnail.path}}.{{character.thumbnail.extension}} alt="{{character.name}}">
+                        <div><h2 id="char_name"> {{character.name}}</h2></div>
+                        <div>
+                            <button id="btn">
+                                <a id="detalhes" href="{{character.urls[0].url}}" target="_blank">Detalhes</a>
+                            </button>
+                        </div>
+                    </mat-card>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>

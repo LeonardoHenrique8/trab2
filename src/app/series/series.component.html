@@ -1,0 +1,19 @@
+<section class="container">
+  <div class="background_ser" fxFlex fxLayout="column">
+    <div fxLayout="row wrap">
+      <div fxFlex="33" fxFlex.md="33" fxFle.sm="50" fxFlex.xs="100" fxLayout="column" *ngFor="let serie of TodasSeries | async" style="padding: 5px">
+        <a href="{{serie.urls[0].url}}" target="_blank">
+          <mat-card class="my_ser">
+            <img mat-card-image class="imagem" src={{serie.thumbnail.path}}.{{serie.thumbnail.extension}} alt="{{serie.name}}">
+            <div><h2 id="ser_name"> {{serie.title}}</h2></div>
+            <div>
+              <button id="btn">
+                <a id="detalhes" href="{{serie.urls[0].url}}" target="_blank">Detalhes</a>
+              </button>
+            </div>
+          </mat-card>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
